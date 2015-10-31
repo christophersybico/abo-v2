@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A79A40291BDD87F1006690E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79A40281BDD87F1006690E1 /* AppDelegate.swift */; };
+		A79A402B1BDD87F1006690E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79A402A1BDD87F1006690E1 /* ViewController.swift */; };
+		A79A402E1BDD87F1006690E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A79A402C1BDD87F1006690E1 /* Main.storyboard */; };
+		A79A40301BDD87F1006690E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A79A402F1BDD87F1006690E1 /* Assets.xcassets */; };
+		A79A40331BDD87F1006690E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A79A40311BDD87F1006690E1 /* LaunchScreen.storyboard */; };
+		A79A403E1BDD87F1006690E1 /* abo_v2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79A403D1BDD87F1006690E1 /* abo_v2Tests.swift */; };
+		A79A40491BDD87F1006690E1 /* abo_v2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79A40481BDD87F1006690E1 /* abo_v2UITests.swift */; };
+		A7A85A121BE3089F00E629ED /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A85A111BE3089F00E629ED /* Common.swift */; };
+		A7A85A161BE30A0000E629ED /* NewRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A85A151BE30A0000E629ED /* NewRequestViewController.swift */; };
+		A7C419141BE44890009D31F2 /* RequestDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C419131BE44890009D31F2 /* RequestDetailViewController.swift */; };
+		A7C419161BE4932C009D31F2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C419151BE4932C009D31F2 /* HomeViewController.swift */; };
+		A7C419191BE4BC2E009D31F2 /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C419171BE4BC2E009D31F2 /* FadeTransition.swift */; };
+		A7C4191A1BE4BC2E009D31F2 /* BaseTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C419181BE4BC2E009D31F2 /* BaseTransition.swift */; };
+		A7C4191C1BE4BD0E009D31F2 /* BlobTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C4191B1BE4BD0E009D31F2 /* BlobTransition.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A79A403A1BDD87F1006690E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A79A401D1BDD87F1006690E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A79A40241BDD87F1006690E1;
+			remoteInfo = "abo-v2";
+		};
+		A79A40451BDD87F1006690E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A79A401D1BDD87F1006690E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A79A40241BDD87F1006690E1;
+			remoteInfo = "abo-v2";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A79A40251BDD87F1006690E1 /* abo-v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "abo-v2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A79A40281BDD87F1006690E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A79A402A1BDD87F1006690E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A79A402D1BDD87F1006690E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A79A402F1BDD87F1006690E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A79A40321BDD87F1006690E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A79A40341BDD87F1006690E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A79A40391BDD87F1006690E1 /* abo-v2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "abo-v2Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A79A403D1BDD87F1006690E1 /* abo_v2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = abo_v2Tests.swift; sourceTree = "<group>"; };
+		A79A403F1BDD87F1006690E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A79A40441BDD87F1006690E1 /* abo-v2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "abo-v2UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A79A40481BDD87F1006690E1 /* abo_v2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = abo_v2UITests.swift; sourceTree = "<group>"; };
+		A79A404A1BDD87F1006690E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7A85A111BE3089F00E629ED /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		A7A85A151BE30A0000E629ED /* NewRequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewRequestViewController.swift; sourceTree = "<group>"; };
+		A7C419131BE44890009D31F2 /* RequestDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestDetailViewController.swift; sourceTree = "<group>"; };
+		A7C419151BE4932C009D31F2 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A7C419171BE4BC2E009D31F2 /* FadeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeTransition.swift; sourceTree = "<group>"; };
+		A7C419181BE4BC2E009D31F2 /* BaseTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTransition.swift; sourceTree = "<group>"; };
+		A7C4191B1BE4BD0E009D31F2 /* BlobTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlobTransition.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A79A40221BDD87F1006690E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A79A40361BDD87F1006690E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A79A40411BDD87F1006690E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A79A401C1BDD87F1006690E1 = {
+			isa = PBXGroup;
+			children = (
+				A79A40271BDD87F1006690E1 /* abo-v2 */,
+				A79A403C1BDD87F1006690E1 /* abo-v2Tests */,
+				A79A40471BDD87F1006690E1 /* abo-v2UITests */,
+				A79A40261BDD87F1006690E1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A79A40261BDD87F1006690E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A79A40251BDD87F1006690E1 /* abo-v2.app */,
+				A79A40391BDD87F1006690E1 /* abo-v2Tests.xctest */,
+				A79A40441BDD87F1006690E1 /* abo-v2UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A79A40271BDD87F1006690E1 /* abo-v2 */ = {
+			isa = PBXGroup;
+			children = (
+				A7A85A111BE3089F00E629ED /* Common.swift */,
+				A7C419171BE4BC2E009D31F2 /* FadeTransition.swift */,
+				A7C419181BE4BC2E009D31F2 /* BaseTransition.swift */,
+				A7C4191B1BE4BD0E009D31F2 /* BlobTransition.swift */,
+				A79A40281BDD87F1006690E1 /* AppDelegate.swift */,
+				A79A402A1BDD87F1006690E1 /* ViewController.swift */,
+				A79A402C1BDD87F1006690E1 /* Main.storyboard */,
+				A7C419151BE4932C009D31F2 /* HomeViewController.swift */,
+				A7C419131BE44890009D31F2 /* RequestDetailViewController.swift */,
+				A7A85A151BE30A0000E629ED /* NewRequestViewController.swift */,
+				A79A402F1BDD87F1006690E1 /* Assets.xcassets */,
+				A79A40311BDD87F1006690E1 /* LaunchScreen.storyboard */,
+				A79A40341BDD87F1006690E1 /* Info.plist */,
+			);
+			path = "abo-v2";
+			sourceTree = "<group>";
+		};
+		A79A403C1BDD87F1006690E1 /* abo-v2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A79A403D1BDD87F1006690E1 /* abo_v2Tests.swift */,
+				A79A403F1BDD87F1006690E1 /* Info.plist */,
+			);
+			path = "abo-v2Tests";
+			sourceTree = "<group>";
+		};
+		A79A40471BDD87F1006690E1 /* abo-v2UITests */ = {
+			isa = PBXGroup;
+			children = (
+				A79A40481BDD87F1006690E1 /* abo_v2UITests.swift */,
+				A79A404A1BDD87F1006690E1 /* Info.plist */,
+			);
+			path = "abo-v2UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A79A40241BDD87F1006690E1 /* abo-v2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A79A404D1BDD87F1006690E1 /* Build configuration list for PBXNativeTarget "abo-v2" */;
+			buildPhases = (
+				A79A40211BDD87F1006690E1 /* Sources */,
+				A79A40221BDD87F1006690E1 /* Frameworks */,
+				A79A40231BDD87F1006690E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "abo-v2";
+			productName = "abo-v2";
+			productReference = A79A40251BDD87F1006690E1 /* abo-v2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A79A40381BDD87F1006690E1 /* abo-v2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A79A40501BDD87F1006690E1 /* Build configuration list for PBXNativeTarget "abo-v2Tests" */;
+			buildPhases = (
+				A79A40351BDD87F1006690E1 /* Sources */,
+				A79A40361BDD87F1006690E1 /* Frameworks */,
+				A79A40371BDD87F1006690E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A79A403B1BDD87F1006690E1 /* PBXTargetDependency */,
+			);
+			name = "abo-v2Tests";
+			productName = "abo-v2Tests";
+			productReference = A79A40391BDD87F1006690E1 /* abo-v2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A79A40431BDD87F1006690E1 /* abo-v2UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A79A40531BDD87F1006690E1 /* Build configuration list for PBXNativeTarget "abo-v2UITests" */;
+			buildPhases = (
+				A79A40401BDD87F1006690E1 /* Sources */,
+				A79A40411BDD87F1006690E1 /* Frameworks */,
+				A79A40421BDD87F1006690E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A79A40461BDD87F1006690E1 /* PBXTargetDependency */,
+			);
+			name = "abo-v2UITests";
+			productName = "abo-v2UITests";
+			productReference = A79A40441BDD87F1006690E1 /* abo-v2UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A79A401D1BDD87F1006690E1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Sybico, Christopher";
+				TargetAttributes = {
+					A79A40241BDD87F1006690E1 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = V32Q7L73GY;
+					};
+					A79A40381BDD87F1006690E1 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = V32Q7L73GY;
+						TestTargetID = A79A40241BDD87F1006690E1;
+					};
+					A79A40431BDD87F1006690E1 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = V32Q7L73GY;
+						TestTargetID = A79A40241BDD87F1006690E1;
+					};
+				};
+			};
+			buildConfigurationList = A79A40201BDD87F1006690E1 /* Build configuration list for PBXProject "abo-v2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A79A401C1BDD87F1006690E1;
+			productRefGroup = A79A40261BDD87F1006690E1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A79A40241BDD87F1006690E1 /* abo-v2 */,
+				A79A40381BDD87F1006690E1 /* abo-v2Tests */,
+				A79A40431BDD87F1006690E1 /* abo-v2UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A79A40231BDD87F1006690E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A79A40331BDD87F1006690E1 /* LaunchScreen.storyboard in Resources */,
+				A79A40301BDD87F1006690E1 /* Assets.xcassets in Resources */,
+				A79A402E1BDD87F1006690E1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A79A40371BDD87F1006690E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A79A40421BDD87F1006690E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A79A40211BDD87F1006690E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7A85A161BE30A0000E629ED /* NewRequestViewController.swift in Sources */,
+				A7C419191BE4BC2E009D31F2 /* FadeTransition.swift in Sources */,
+				A7C419141BE44890009D31F2 /* RequestDetailViewController.swift in Sources */,
+				A7C4191C1BE4BD0E009D31F2 /* BlobTransition.swift in Sources */,
+				A7A85A121BE3089F00E629ED /* Common.swift in Sources */,
+				A79A402B1BDD87F1006690E1 /* ViewController.swift in Sources */,
+				A7C4191A1BE4BC2E009D31F2 /* BaseTransition.swift in Sources */,
+				A79A40291BDD87F1006690E1 /* AppDelegate.swift in Sources */,
+				A7C419161BE4932C009D31F2 /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A79A40351BDD87F1006690E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A79A403E1BDD87F1006690E1 /* abo_v2Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A79A40401BDD87F1006690E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A79A40491BDD87F1006690E1 /* abo_v2UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A79A403B1BDD87F1006690E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A79A40241BDD87F1006690E1 /* abo-v2 */;
+			targetProxy = A79A403A1BDD87F1006690E1 /* PBXContainerItemProxy */;
+		};
+		A79A40461BDD87F1006690E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A79A40241BDD87F1006690E1 /* abo-v2 */;
+			targetProxy = A79A40451BDD87F1006690E1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A79A402C1BDD87F1006690E1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A79A402D1BDD87F1006690E1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A79A40311BDD87F1006690E1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A79A40321BDD87F1006690E1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A79A404B1BDD87F1006690E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A79A404C1BDD87F1006690E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A79A404E1BDD87F1006690E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "abo-v2/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.csybico.abo-v2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A79A404F1BDD87F1006690E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "abo-v2/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.csybico.abo-v2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A79A40511BDD87F1006690E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "abo-v2Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.csybico.abo-v2Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/abo-v2.app/abo-v2";
+			};
+			name = Debug;
+		};
+		A79A40521BDD87F1006690E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "abo-v2Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.csybico.abo-v2Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/abo-v2.app/abo-v2";
+			};
+			name = Release;
+		};
+		A79A40541BDD87F1006690E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "abo-v2UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.csybico.abo-v2UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "abo-v2";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		A79A40551BDD87F1006690E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "abo-v2UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.csybico.abo-v2UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "abo-v2";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A79A40201BDD87F1006690E1 /* Build configuration list for PBXProject "abo-v2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A79A404B1BDD87F1006690E1 /* Debug */,
+				A79A404C1BDD87F1006690E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A79A404D1BDD87F1006690E1 /* Build configuration list for PBXNativeTarget "abo-v2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A79A404E1BDD87F1006690E1 /* Debug */,
+				A79A404F1BDD87F1006690E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A79A40501BDD87F1006690E1 /* Build configuration list for PBXNativeTarget "abo-v2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A79A40511BDD87F1006690E1 /* Debug */,
+				A79A40521BDD87F1006690E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A79A40531BDD87F1006690E1 /* Build configuration list for PBXNativeTarget "abo-v2UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A79A40541BDD87F1006690E1 /* Debug */,
+				A79A40551BDD87F1006690E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A79A401D1BDD87F1006690E1 /* Project object */;
+}
