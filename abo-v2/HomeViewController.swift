@@ -83,18 +83,13 @@ class HomeViewController: UIViewController, UIScrollViewDelegate {
         
         let destinationVC = segue.destinationViewController as! RequestDetailViewController
         
-        
         // SEND IMAGE
         destinationVC.blobImage = selectedBlobImage
-//        destinationVC.requestViewFrame = selectedViewOriginalFrame
-//        destinationVC.requestViewFrameOffsetX = homeScrollViewOffsetX
-        
         
         // SETUP BLOB TRANSITION
         blobTransition = BlobTransition()
         destinationVC.modalPresentationStyle = UIModalPresentationStyle.Custom
         destinationVC.transitioningDelegate = blobTransition
-        
     }
     
     override func didReceiveMemoryWarning() {

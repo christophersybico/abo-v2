@@ -12,7 +12,7 @@ class BaseTransition: NSObject, UIViewControllerTransitioningDelegate, UIViewCon
     
     var duration: NSTimeInterval = 0.4
     var isPresenting: Bool = true
-    var isInteractive: Bool = true
+    var isInteractive: Bool = false
     var transitionContext: UIViewControllerContextTransitioning!
     var interactiveTransition: UIPercentDrivenInteractiveTransition!
     

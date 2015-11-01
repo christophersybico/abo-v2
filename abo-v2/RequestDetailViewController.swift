@@ -12,6 +12,7 @@ class RequestDetailViewController: UIViewController {
     
 
     var requestView: UIView!
+    var initialCenter: CGPoint!
 //    var requestViewFrame: CGRect!
 //    var requestViewFrameOffsetX: CGFloat!
     
@@ -22,16 +23,43 @@ class RequestDetailViewController: UIViewController {
      
         super.viewDidLoad()
         requestView = UIView()
+        
+        let requestViewPan = UIPanGestureRecognizer(target: self, action: "didPanRequest:")
+        requestView.addGestureRecognizer(requestViewPan)
     }
+    
+    
+    // PAN ON REQUEST
+    func didPanRequest(sender: UIPanGestureRecognizer) {
+        
+        let translation = sender.translationInView(view)
+        
+        
+        // BEGIN PANNING
+        if sender.state == UIGestureRecognizerState.Began {
+            
+            initialCenter = requestView.center
+            
+        }
+        
+        // PANNING
+        else if sender.state == UIGestureRecognizerState.Changed {
+            print("panning")
+
+            requestView.center.y = initialCenter.y + translation.y
+        
+        }
+            
+        // END PANNING
+        else if sender.state == UIGestureRecognizerState.Ended {
+            dismissViewControllerAnimated(true, completion: nil)
+        }
+        
+    }
+    
 
     @IBAction func didPressDismiss(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: nil)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-     
-    }
-    
     
 }
