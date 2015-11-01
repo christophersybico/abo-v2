@@ -10,29 +10,28 @@ import UIKit
 
 class RequestDetailViewController: UIViewController {
     
-    var blobImage: UIImage!
-    var justView: UIView!
 
-    @IBOutlet weak var blobImageView: UIImageView!
+    var requestView: UIView!
+//    var requestViewFrame: CGRect!
+//    var requestViewFrameOffsetX: CGFloat!
     
+    var blobImage: UIImage!
+    var blobImageView: UIImageView!
     
     override func viewDidLoad() {
      
         super.viewDidLoad()
-        
-//        view.addSubview(justView)
-        
-        blobImageView.image = blobImage
-     
+        requestView = UIView()
+    }
+
+    @IBAction func didPressDismiss(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
      
     }
-
-    @IBAction func didPressDismiss(sender: AnyObject) {
-        dismissViewControllerAnimated(true, completion: nil)
-    }
+    
     
 }
