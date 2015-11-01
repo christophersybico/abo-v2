@@ -22,6 +22,11 @@ class HomeViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var oaklandRequestView: UIView!
     
     
+    // BLOBS
+    var blob: UIImageView!
+    var blobCoat: UIImageView!
+    
+    
     // SELECTED REQUESTS
     var selectedView: UIView!
     var selectedViewOriginalFrame: CGRect!
@@ -55,6 +60,34 @@ class HomeViewController: UIViewController, UIScrollViewDelegate {
         williamRequestView.addGestureRecognizer(williamTap)
         timRequestView.addGestureRecognizer(timtap)
         oaklandRequestView.addGestureRecognizer(oaklandTap)
+        
+        
+        // SHOW BLOBS
+        showBlobs(timRequestView)
+        
+        
+    }
+    
+    func showBlobs(requestView: UIView) {
+        let blob = requestView.viewWithTag(10) as! UIImageView
+        let blobCoat = requestView.viewWithTag(11) as! UIImageView
+    
+        let rotation = 180
+        blob.alpha = 1
+    
+        UIView.animateWithDuration(
+            3,
+            delay: 0,
+            options: [UIViewAnimationOptions.Autoreverse, UIViewAnimationOptions.Repeat, UIViewAnimationOptions.AllowUserInteraction],
+            animations: { () -> Void in
+    
+                blobCoat.transform = CGAffineTransformMakeRotation(CGFloat(Double(rotation) * M_PI / 180))
+                blobCoat.transform = CGAffineTransformTranslate(blobCoat.transform, 0, 4)
+                blob.transform = CGAffineTransformScale(blob.transform, 0.98, 1.03)
+            },
+    
+            completion: nil
+        )
     }
     
     
@@ -66,6 +99,8 @@ class HomeViewController: UIViewController, UIScrollViewDelegate {
     
     // TAP ON REQUEST
     func didTapRequest(sender: UITapGestureRecognizer) {
+        
+        print("tap")
         
         // STORE SELECTED VIEW
         selectedView = sender.view

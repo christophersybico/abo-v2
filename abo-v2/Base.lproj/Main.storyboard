@@ -46,20 +46,28 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Bubbles Behind" id="ezf-4I-H8f">
-                                <rect key="frame" x="0.0" y="62" width="1665" height="544"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Filter" id="Y56-Yj-2lz">
+                                <rect key="frame" x="122" y="596" width="130" height="36"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Request - Nav" id="5Yx-bV-PQL">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="88"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dgc-HR-zLG" userLabel="New Request">
+                                <rect key="frame" x="330" y="37" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title=" "/>
+                                <connections>
+                                    <segue destination="Tbx-EO-8yi" kind="modal" id="6d5-Qa-RvQ"/>
+                                </connections>
+                            </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="AUy-vQ-yfc" userLabel="Request Scroll View">
                                 <rect key="frame" x="0.0" y="0.0" width="1665" height="667"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Request - Jeremie" id="afa-cz-gn2">
-                                        <rect key="frame" x="139" y="328" width="219" height="209"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                    </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Request - USCF" id="1Pb-qt-dVb">
-                                        <rect key="frame" x="455" y="434" width="180" height="159"/>
+                                        <rect key="frame" x="349" y="338" width="219" height="209"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Request - Annabel" id="IKr-Da-Iba">
@@ -96,28 +104,18 @@
                                     <view contentMode="scaleToFill" id="GwX-CJ-OOD" userLabel="Request - William">
                                         <rect key="frame" x="311" y="137" width="182" height="175"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <subviews>
-                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="10" contentMode="center" image="Blob - Pink" id="mtq-ms-rs7">
-                                                <rect key="frame" x="0.0" y="0.0" width="182" height="175"/>
-                                                <autoresizingMask key="autoresizingMask"/>
-                                            </imageView>
-                                        </subviews>
                                         <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </view>
                                     <view tag="20" contentMode="scaleToFill" id="zQr-Jl-zkg" userLabel="Request - Tim">
-                                        <rect key="frame" x="43" y="161" width="178" height="167"/>
+                                        <rect key="frame" x="33" y="145" width="194" height="193"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="10" contentMode="center" image="Blob - Medium" id="J6n-50-we3" userLabel="Blob - Red Medium">
-                                                <rect key="frame" x="0.0" y="0.0" width="178" height="167"/>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="10" contentMode="center" image="blob_1" id="LXf-nZ-wPK" userLabel="Blob ">
+                                                <rect key="frame" x="8" y="12" width="178" height="169"/>
                                                 <autoresizingMask key="autoresizingMask"/>
-                                                <gestureRecognizers/>
-                                                <connections>
-                                                    <outletCollection property="gestureRecognizers" destination="qee-o0-mw8" appends="YES" id="oGo-s3-H2h"/>
-                                                </connections>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" tag="20" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tim Smith" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="U45-zy-RFf" userLabel="Name">
-                                                <rect key="frame" x="24" y="56" width="129" height="20"/>
+                                                <rect key="frame" x="34" y="66" width="129" height="20"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -126,7 +124,7 @@
                                                 <size key="shadowOffset" width="0.0" height="1"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" tag="30" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Needs 0-.Urgent help needed at our hospital.." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="diY-XD-F7p" userLabel="Message">
-                                                <rect key="frame" x="12" y="72" width="154" height="40"/>
+                                                <rect key="frame" x="22" y="82" width="154" height="40"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -134,27 +132,23 @@
                                                 <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.080000000000000002" colorSpace="calibratedRGB"/>
                                                 <size key="shadowOffset" width="0.0" height="1"/>
                                             </label>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="11" contentMode="center" image="blob_1_coat" id="mXT-j1-IB2">
+                                                <rect key="frame" x="0.0" y="0.0" width="194" height="193"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" red="1" green="0.3852647569444444" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                     </view>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="10" contentMode="center" image="Blob - Pink" id="mtq-ms-rs7">
+                                        <rect key="frame" x="404" y="137" width="182" height="175"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Request - USCF" id="1Pb-qt-dVb">
+                                        <rect key="frame" x="551" y="476" width="180" height="159"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
                                 </subviews>
                             </scrollView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Filter" id="Y56-Yj-2lz">
-                                <rect key="frame" x="122" y="596" width="130" height="36"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Request - Nav" id="5Yx-bV-PQL">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="88"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dgc-HR-zLG" userLabel="New Request">
-                                <rect key="frame" x="330" y="37" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title=" "/>
-                                <connections>
-                                    <segue destination="Tbx-EO-8yi" kind="modal" id="6d5-Qa-RvQ"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -221,9 +215,7 @@
     </scenes>
     <resources>
         <image name="Background" width="375" height="667"/>
-        <image name="Blob - Medium" width="178" height="167"/>
         <image name="Blob - Pink" width="182" height="175"/>
-        <image name="Bubbles Behind" width="1665" height="544"/>
         <image name="Filter" width="130" height="36"/>
         <image name="Intro 1" width="375" height="667"/>
         <image name="Jessica Sanchez" width="186" height="175"/>
@@ -236,5 +228,7 @@
         <image name="Request - Nav" width="375" height="88"/>
         <image name="Request - Oakland Donation" width="173" height="162"/>
         <image name="Request - USCF" width="180" height="159"/>
+        <image name="blob_1" width="178" height="169"/>
+        <image name="blob_1_coat" width="194" height="193"/>
     </resources>
 </document>

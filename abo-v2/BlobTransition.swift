@@ -40,14 +40,14 @@ class BlobTransition: BaseTransition {
             
             duration,
             delay: 0,
-            usingSpringWithDamping: 2,
-            initialSpringVelocity: 0.2,
+            usingSpringWithDamping: 1.2,
+            initialSpringVelocity: 0.8,
             options: UIViewAnimationOptions.CurveEaseInOut,
             
             animations: { () -> Void in
-                requestView.center = CGPoint(x: 180, y: 333)
+                requestView.center = CGPoint(x: 230, y: 350)
                 
-                requestView.transform = CGAffineTransformMakeScale(3, 3)
+                requestView.transform = CGAffineTransformMakeScale(5, 5)
                 
             }
         )
@@ -77,15 +77,15 @@ class BlobTransition: BaseTransition {
             
             duration,
             delay: 0,
-            usingSpringWithDamping: 0.9,
-            initialSpringVelocity: 0.1,
+            usingSpringWithDamping: 1.2,
+            initialSpringVelocity: 0.8,
             options: UIViewAnimationOptions.CurveEaseInOut,
             
             animations: { () -> Void in
                 
                 requestView.center = CGPoint(
-                    x: currentX,
-                    y: currentY
+                    x: currentX + 12,
+                    y: currentY + 10
                 )
                 
                 requestView.transform = CGAffineTransformMakeScale(1, 1)
