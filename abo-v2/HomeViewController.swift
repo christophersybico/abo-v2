@@ -18,9 +18,11 @@ class HomeViewController: UIViewController, UIScrollViewDelegate {
     
     // REQUESTS
     @IBOutlet weak var timRequestView: UIView!
-    @IBOutlet weak var williamRequestView: UIView!
-    @IBOutlet weak var oaklandRequestView: UIView!
-    
+    @IBOutlet weak var jeremieRequestView: UIView!
+    @IBOutlet weak var annabelRequestView: UIView!
+    @IBOutlet weak var carolineRequestView: UIView!
+    @IBOutlet weak var markRequestView: UIView!
+    @IBOutlet weak var ucsfRequestView: UIView!
     
     // BLOBS
     var blob: UIImageView!
@@ -51,20 +53,30 @@ class HomeViewController: UIViewController, UIScrollViewDelegate {
         
 
         // SET UP TAP GESTURE RECOGNISER
-        let williamTap = UITapGestureRecognizer(target: self, action: "didTapRequest:")
         let timtap = UITapGestureRecognizer(target: self, action: "didTapRequest:")
-        let oaklandTap = UITapGestureRecognizer(target: self, action: "didTapRequest:")
+        let jeremieTap = UITapGestureRecognizer(target: self, action: "didTapRequest:")
+        let annabelTap = UITapGestureRecognizer(target: self, action: "didTapRequest:")
+        let carolineTap = UITapGestureRecognizer(target: self, action: "didTapRequest:")
+        let markTap = UITapGestureRecognizer(target: self, action: "didTapRequest:")
+        let ucsfTap = UITapGestureRecognizer(target: self, action: "didTapRequest:")
         
         
         // SET UP TAPS FOR REQUESTS
-        williamRequestView.addGestureRecognizer(williamTap)
         timRequestView.addGestureRecognizer(timtap)
-        oaklandRequestView.addGestureRecognizer(oaklandTap)
+        jeremieRequestView.addGestureRecognizer(jeremieTap)
+        annabelRequestView.addGestureRecognizer(annabelTap)
+        carolineRequestView.addGestureRecognizer(carolineTap)
+        markRequestView.addGestureRecognizer(markTap)
+        ucsfRequestView.addGestureRecognizer(ucsfTap)
         
         
         // SHOW BLOBS
         showBlobs(timRequestView)
-        
+        showBlobs(jeremieRequestView)
+        showBlobs(annabelRequestView)
+        showBlobs(carolineRequestView)
+        showBlobs(markRequestView)
+        showBlobs(ucsfRequestView)
         
     }
     
@@ -75,17 +87,30 @@ class HomeViewController: UIViewController, UIScrollViewDelegate {
         let rotation = 180
         blob.alpha = 1
     
+        // BLOB SIZE
         UIView.animateWithDuration(
-            3,
+            2,
             delay: 0,
             options: [UIViewAnimationOptions.Autoreverse, UIViewAnimationOptions.Repeat, UIViewAnimationOptions.AllowUserInteraction],
             animations: { () -> Void in
     
-                blobCoat.transform = CGAffineTransformMakeRotation(CGFloat(Double(rotation) * M_PI / 180))
-                blobCoat.transform = CGAffineTransformTranslate(blobCoat.transform, 0, 4)
-                blob.transform = CGAffineTransformScale(blob.transform, 0.98, 1.03)
+                blob.transform = CGAffineTransformScale(blob.transform, 0.97, 1.03)
             },
     
+            completion: nil
+        )
+        
+        
+        // BLOB COAT ROTATION
+        UIView.animateWithDuration(
+            16,
+            delay: 0,
+            options: [UIViewAnimationOptions.Autoreverse, UIViewAnimationOptions.Repeat, UIViewAnimationOptions.AllowUserInteraction],
+            animations: { () -> Void in
+                
+                blobCoat.transform = CGAffineTransformMakeRotation(CGFloat(Double(rotation) * M_PI / 180))
+            },
+            
             completion: nil
         )
     }
